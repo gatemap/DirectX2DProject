@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Dx2D Framework">
+      <UniqueIdentifier>{cf0f9737-e0c6-4fac-8a88-d2fb5acfb2b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dx2D Framework\1. MainClasses">
+      <UniqueIdentifier>{bb3000f2-faee-45d4-b318-13eae14e95b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dx2D Framework\0. Shader Files">
+      <UniqueIdentifier>{389c072b-9609-4213-b5ac-29cdfc3829d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dx2D Framework\2. Manager">
+      <UniqueIdentifier>{b5c03ed0-02e7-4d5c-a35c-208689436b56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dx2D Framework\2. Manager\Keyboard">
+      <UniqueIdentifier>{1cb5479f-c0ad-4a5f-83f0-bdc51396237b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dx2D Framework\2. Manager\Time">
+      <UniqueIdentifier>{4b5d5d80-c33b-4140-bad2-4a464305e6e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dx2D Framework\1. MainClasses\Render">
+      <UniqueIdentifier>{b366b0fa-83fb-4ac1-b956-18cf9bc9ae1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dx2D Framework\2. Manager\Texture">
+      <UniqueIdentifier>{ce6d05c9-e4f7-4d4b-9755-f456d9eeba15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dx2D Framework\2. Manager\Sound">
+      <UniqueIdentifier>{ec5b1146-fbfe-44fa-9482-38201f171528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dx2D Framework\1. MainClasses\System">
+      <UniqueIdentifier>{f451b06c-3211-4f48-9d54-0190b0f458ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dx2D Framework\2. Manager\File">
+      <UniqueIdentifier>{eaa738c0-12e4-4d67-9132-163fc785a89d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dx2D Framework\2. Manager\Text">
+      <UniqueIdentifier>{d9402f82-0e4b-488c-98f4-63123f71d4b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dx2D Framework\3. GameClasses">
+      <UniqueIdentifier>{d9c56c70-e6a5-4e29-ae90-0df3ddcd7db3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dx2D Framework\3. GameClasses\Play">
+      <UniqueIdentifier>{d3e5639e-1a3b-4f50-98b3-39d09b9ff918}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dx2D Framework\3. GameClasses\PlayData">
+      <UniqueIdentifier>{cd3e51f6-d4cb-4b5f-a7de-5467b675b5de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dx2D Framework\3. GameClasses\PlayData\Map">
+      <UniqueIdentifier>{528373ee-8f65-418e-bff0-40907b78efa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dx2D Framework\3. GameClasses\Intro">
+      <UniqueIdentifier>{adf9ccf4-b4dd-4176-86f5-69ae297ed15b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dx2D Framework\3. GameClasses\Play\Menu">
+      <UniqueIdentifier>{d1a53dfa-811a-4d9c-91f2-ca919268c121}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameNode.h">
+      <Filter>Dx2D Framework\1. MainClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame.h">
+      <Filter>Dx2D Framework\1. MainClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="SingletonBase.h">
+      <Filter>Dx2D Framework\2. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyManager.h">
+      <Filter>Dx2D Framework\2. Manager\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Dx2D Framework\2. Manager\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.h">
+      <Filter>Dx2D Framework\2. Manager\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Clip.h">
+      <Filter>Dx2D Framework\1. MainClasses\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Dx2D Framework\1. MainClasses\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Rect.h">
+      <Filter>Dx2D Framework\1. MainClasses\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Dx2D Framework\2. Manager\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Dx2D Framework\1. MainClasses\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>Dx2D Framework\2. Manager\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Dx2D Framework\1. MainClasses\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Dx11_2D.h">
+      <Filter>Dx2D Framework\1. MainClasses\System</Filter>
+    </ClInclude>
+    <ClInclude Include="DXComponent.h">
+      <Filter>Dx2D Framework\1. MainClasses\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Dx2D Framework\1. MainClasses\System</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Dx2D Framework\1. MainClasses\System</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Dx2D Framework\1. MainClasses\System</Filter>
+    </ClInclude>
+    <ClInclude Include="FileData.h">
+      <Filter>Dx2D Framework\2. Manager\File</Filter>
+    </ClInclude>
+    <ClInclude Include="IniData.h">
+      <Filter>Dx2D Framework\2. Manager\File</Filter>
+    </ClInclude>
+    <ClInclude Include="TextManager.h">
+      <Filter>Dx2D Framework\2. Manager\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="StartScene.h">
+      <Filter>Dx2D Framework\3. GameClasses\Intro</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Dx2D Framework\3. GameClasses\Play</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Dx2D Framework\3. GameClasses\Play\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <Filter>Dx2D Framework\3. GameClasses\Play\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="HPokemon.h">
+      <Filter>Dx2D Framework\3. GameClasses\Play\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="IllustratedBook.h">
+      <Filter>Dx2D Framework\3. GameClasses\Play\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Battle.h">
+      <Filter>Dx2D Framework\3. GameClasses\Play</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Dx2D Framework\3. GameClasses\PlayData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pikachu.h">
+      <Filter>Dx2D Framework\3. GameClasses\Play</Filter>
+    </ClInclude>
+    <ClInclude Include="Pokemon.h">
+      <Filter>Dx2D Framework\3. GameClasses\PlayData</Filter>
+    </ClInclude>
+    <ClInclude Include="Skill.h">
+      <Filter>Dx2D Framework\3. GameClasses\PlayData</Filter>
+    </ClInclude>
+    <ClInclude Include="PokemonCenter.h">
+      <Filter>Dx2D Framework\3. GameClasses\PlayData\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="PalletTown.h">
+      <Filter>Dx2D Framework\3. GameClasses\PlayData\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="MtMoon.h">
+      <Filter>Dx2D Framework\3. GameClasses\PlayData\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Route01.h">
+      <Filter>Dx2D Framework\3. GameClasses\PlayData\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="NPC.h">
+      <Filter>Dx2D Framework\3. GameClasses\PlayData</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Dx2D Framework\3. GameClasses\PlayData\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaySetting.h">
+      <Filter>Dx2D Framework\3. GameClasses</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MainGame.cpp">
+      <Filter>Dx2D Framework\1. MainClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyManager.cpp">
+      <Filter>Dx2D Framework\2. Manager\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Dx2D Framework\2. Manager\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>Dx2D Framework\2. Manager\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="Clip.cpp">
+      <Filter>Dx2D Framework\1. MainClasses\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Rect.cpp">
+      <Filter>Dx2D Framework\1. MainClasses\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Dx2D Framework\1. MainClasses\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Dx2D Framework\2. Manager\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Dx2D Framework\1. MainClasses\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>Dx2D Framework\2. Manager\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Dx2D Framework\1. MainClasses\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Dx11_2D.cpp">
+      <Filter>Dx2D Framework\1. MainClasses\System</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Dx2D Framework\1. MainClasses\System</Filter>
+    </ClCompile>
+    <ClCompile Include="FileData.cpp">
+      <Filter>Dx2D Framework\2. Manager\File</Filter>
+    </ClCompile>
+    <ClCompile Include="IniData.cpp">
+      <Filter>Dx2D Framework\2. Manager\File</Filter>
+    </ClCompile>
+    <ClCompile Include="TextManager.cpp">
+      <Filter>Dx2D Framework\2. Manager\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="StartScene.cpp">
+      <Filter>Dx2D Framework\3. GameClasses\Intro</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Dx2D Framework\3. GameClasses\Play</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Dx2D Framework\3. GameClasses\Play\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>Dx2D Framework\3. GameClasses\Play\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="HPokemon.cpp">
+      <Filter>Dx2D Framework\3. GameClasses\Play\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="IllustratedBook.cpp">
+      <Filter>Dx2D Framework\3. GameClasses\Play\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Battle.cpp">
+      <Filter>Dx2D Framework\3. GameClasses\Play</Filter>
+    </ClCompile>
+    <ClCompile Include="Pikachu.cpp">
+      <Filter>Dx2D Framework\3. GameClasses\Play</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Dx2D Framework\3. GameClasses\PlayData</Filter>
+    </ClCompile>
+    <ClCompile Include="Pokemon.cpp">
+      <Filter>Dx2D Framework\3. GameClasses\PlayData</Filter>
+    </ClCompile>
+    <ClCompile Include="Skill.cpp">
+      <Filter>Dx2D Framework\3. GameClasses\PlayData</Filter>
+    </ClCompile>
+    <ClCompile Include="PokemonCenter.cpp">
+      <Filter>Dx2D Framework\3. GameClasses\PlayData\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="PalletTown.cpp">
+      <Filter>Dx2D Framework\3. GameClasses\PlayData\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="MtMoon.cpp">
+      <Filter>Dx2D Framework\3. GameClasses\PlayData\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Route01.cpp">
+      <Filter>Dx2D Framework\3. GameClasses\PlayData\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="NPC.cpp">
+      <Filter>Dx2D Framework\3. GameClasses\PlayData</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Dx2D Framework\3. GameClasses\PlayData\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaySetting.cpp">
+      <Filter>Dx2D Framework\3. GameClasses</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Dx11_2D.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Dx11_2D.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Effect.hlsl">
+      <Filter>Dx2D Framework\0. Shader Files</Filter>
+    </None>
+    <None Include="..\..\_Shader\Rect.hlsl">
+      <Filter>Dx2D Framework\0. Shader Files</Filter>
+    </None>
+    <None Include="..\..\_Shader\Sprite.hlsl">
+      <Filter>Dx2D Framework\0. Shader Files</Filter>
+    </None>
+    <None Include="..\..\_Shader\Sprite2.hlsl">
+      <Filter>Dx2D Framework\0. Shader Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
