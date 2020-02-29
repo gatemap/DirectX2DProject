@@ -2,6 +2,7 @@
 #include "SingletonBase.h"
 
 #include "FMOD/inc/fmod.hpp"
+
 #pragma comment(lib, "FMOD/lib/fmodex_vc.lib")
 using namespace FMOD;
 

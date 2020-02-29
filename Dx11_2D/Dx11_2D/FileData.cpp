@@ -45,9 +45,7 @@ void FileData::TextSave(wstring fileName, vector<string> saveData)
 	char szBuf[1024];
 	DWORD dwWrite;
 
-	hFile = CreateFile(fileName.c_str(),
-		GENERIC_WRITE, 0, NULL, CREATE_ALWAYS,
-		FILE_ATTRIBUTE_NORMAL, NULL);
+	hFile = CreateFile(fileName.c_str(), GENERIC_WRITE, 0, NULL, CREATE_ALWAYS,	FILE_ATTRIBUTE_NORMAL, NULL);
 
 	strncpy_s(szBuf, 1024, VectorArrayCombine(saveData), 1024 - 2);
 	WriteFile(hFile, szBuf, strlen(szBuf), &dwWrite, NULL);
