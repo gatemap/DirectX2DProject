@@ -178,6 +178,9 @@
     <ClInclude Include="PlaySetting.h">
       <Filter>Dx2D Framework\3. GameClasses</Filter>
     </ClInclude>
+    <ClInclude Include="GameComponant.h">
+      <Filter>Dx2D Framework\1. MainClasses\System</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainGame.cpp">
