@@ -160,10 +160,12 @@
   <ItemGroup>
     <ClInclude Include="Animation.h" />
     <ClInclude Include="Battle.h" />
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="Clip.h" />
     <ClInclude Include="DXComponent.h" />
     <ClInclude Include="FileData.h" />
     <ClInclude Include="GameComponant.h" />
+    <ClInclude Include="GameManager.h" />
     <ClInclude Include="GameNode.h" />
     <ClInclude Include="Dx11_2D.h" />
     <ClInclude Include="HPokemon.h" />
@@ -202,9 +204,11 @@
   <ItemGroup>
     <ClCompile Include="Animation.cpp" />
     <ClCompile Include="Battle.cpp" />
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Clip.cpp" />
     <ClCompile Include="Dx11_2D.cpp" />
     <ClCompile Include="FileData.cpp" />
+    <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="HPokemon.cpp" />
     <ClCompile Include="IllustratedBook.cpp" />
     <ClCompile Include="IniData.cpp" />

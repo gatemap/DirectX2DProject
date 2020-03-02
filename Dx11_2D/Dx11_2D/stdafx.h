@@ -22,6 +22,7 @@
 #include <string>
 #include <vector>
 #include <time.h>
+#include <list>
 #include <map>
 using namespace std;
 
@@ -50,6 +51,7 @@ extern HWND			g_hWnd;
 #include "TimeManager.h"
 #include "TextureManager.h"
 #include "SoundManager.h"
+#include "Camera.h"
 
 // ImGui 헤더 및 라이브러라 추가
 #include <imGui/imgui.h>

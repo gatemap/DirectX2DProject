@@ -63,7 +63,6 @@ void Player::Init()
 	collisionCheck = PlayerCollision::Normal;
 
 	tmpR = new Rect;
-	tmpR->SetPos(pos.x, pos.y);
 
 	p->Play(PlayerState::FaceIdle);
 }
@@ -80,19 +79,19 @@ void Player::Update()
 		p->Play(PlayerState::Down);
 		pos.y -= speed * g_pTimeManager->GetDeltaTime();
 		if (pos.y - fabs(p->GetSize().y*0.5) < 0 || collisionCheck == PlayerCollision::DownCollision)
-			pos.y += (speed + 5) * g_pTimeManager->GetDeltaTime();
+			pos.y += speed * g_pTimeManager->GetDeltaTime();
 	}
 	else if (g_pKeyManger->isStayKeyDown(VK_LEFT) && !menu) {
 		p->Play(PlayerState::Left);
 		pos.x -= speed * g_pTimeManager->GetDeltaTime();
 		if (pos.x - (fabs(p->GetSize().x)*0.5) < 0 || collisionCheck == PlayerCollision::LeftCollision)
-			pos.x += (speed + 5) * g_pTimeManager->GetDeltaTime();
+			pos.x += speed * g_pTimeManager->GetDeltaTime();
 	}
 	else if (g_pKeyManger->isStayKeyDown(VK_RIGHT) && !menu) {
 		p->Play(PlayerState::Right);
 		pos.x += speed * g_pTimeManager->GetDeltaTime();
 		if (pos.x + (fabs(p->GetSize().x)*0.5) > WINSIZEX || collisionCheck == PlayerCollision::RightCollision)
-			pos.x -= (speed - 5) * g_pTimeManager->GetDeltaTime();
+			pos.x -= speed * g_pTimeManager->GetDeltaTime();
 	}
 	else if (g_pKeyManger->isStayKeyDown(VK_RETURN)) {
 		menuOn = true;
@@ -133,7 +132,7 @@ void Player::Update()
 	p->SetPos(pos.x, pos.y);
 	p->Update();
 
-	tmpR->SetScale(scale.x - 50, scale.y - 50);
+	tmpR->SetScale(scale.x, scale.y);
 	tmpR->SetPos(pos.x, pos.y);
 	tmpR->Update();
 	if (menu)
@@ -150,6 +149,6 @@ void Player::Update()
 void Player::Render()
 {
 	p->Render();
-	//tmpR->Render_Border();
+	tmpR->Render_Border();
 	if (menu) menu->Render();
 }

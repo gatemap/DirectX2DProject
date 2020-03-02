@@ -23,3 +23,46 @@ struct tagVPMatrix
 	D3DXMATRIX Projection;
 };
 
+// === 버퍼 생성 함수들 ===================================================
+// Create Constant Buffer
+inline void CreateConstantBuffer(ID3D11Buffer** ppBuffer, UINT ByteWidth, const void *pSystem)
+{
+	D3D11_BUFFER_DESC desc = { 0, };
+	desc.Usage = D3D11_USAGE_DEFAULT;
+	desc.ByteWidth = ByteWidth;
+	desc.BindFlags = D3D11_BIND_CONSTANT_BUFFER;
+
+	D3D11_SUBRESOURCE_DATA data = { 0, };
+	data.pSysMem = pSystem;
+
+	HRESULT hr = g_pDevice->CreateBuffer(&desc, &data, ppBuffer);
+	assert(SUCCEEDED(hr));
+}
+// 버텍스 버퍼
+inline void CreateVertexBuffer(ID3D11Buffer** ppBuffer, UINT ByteWidth, const void *pSystem)
+{
+	D3D11_BUFFER_DESC desc = { 0, };
+	desc.Usage = D3D11_USAGE_IMMUTABLE;
+	desc.ByteWidth = ByteWidth;
+	desc.BindFlags = D3D11_BIND_VERTEX_BUFFER;
+
+	D3D11_SUBRESOURCE_DATA data = { 0, };
+	data.pSysMem = pSystem;
+
+	HRESULT hr = g_pDevice->CreateBuffer(&desc, &data, ppBuffer);
+	assert(SUCCEEDED(hr));
+}
+// 인덱스 버퍼
+inline void CreateIndexBuffer(ID3D11Buffer** ppBuffer, UINT ByteWidth, const void *pSystem)
+{
+	D3D11_BUFFER_DESC desc = { 0, };
+	desc.Usage = D3D11_USAGE_IMMUTABLE;
+	desc.ByteWidth = ByteWidth;
+	desc.BindFlags = D3D11_BIND_INDEX_BUFFER;
+
+	D3D11_SUBRESOURCE_DATA data = { 0, };
+	data.pSysMem = pSystem;
+
+	HRESULT hr = g_pDevice->CreateBuffer(&desc, &data, ppBuffer);
+	assert(SUCCEEDED(hr));
+}

@@ -59,6 +59,9 @@
     <Filter Include="Dx2D Framework\3. GameClasses\Play\Menu">
       <UniqueIdentifier>{d1a53dfa-811a-4d9c-91f2-ca919268c121}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Dx2D Framework\2. Manager\Camera">
+      <UniqueIdentifier>{b462008b-b0f9-496b-bdc9-d4a0065cce5a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameNode.h">
@@ -181,6 +184,12 @@
     <ClInclude Include="GameComponant.h">
       <Filter>Dx2D Framework\1. MainClasses\System</Filter>
     </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Dx2D Framework\1. MainClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Dx2D Framework\2. Manager\Camera</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainGame.cpp">
@@ -284,6 +293,12 @@
     </ClCompile>
     <ClCompile Include="PlaySetting.cpp">
       <Filter>Dx2D Framework\3. GameClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Dx2D Framework\1. MainClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Dx2D Framework\2. Manager\Camera</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
