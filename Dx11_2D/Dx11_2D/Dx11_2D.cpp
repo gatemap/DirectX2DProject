@@ -11,7 +11,7 @@
 HINSTANCE	g_hInst;											// 현재 인스턴스입니다.
 HWND		g_hWnd;												// 윈도우 핸들
 
-WCHAR		szTitle[MAX_LOADSTRING] = L"게임을 만들어 보자~";		// 제목 표시줄 텍스트입니다.
+WCHAR		szTitle[MAX_LOADSTRING] = L"2D 포트폴리오";		// 제목 표시줄 텍스트입니다.
 MainGame*	pMainGame;
 POINT		ptAdjWinSize;
 
@@ -85,8 +85,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
     return (int) msg.wParam;
 }
-
-
 
 //
 //  함수: MyRegisterClass()

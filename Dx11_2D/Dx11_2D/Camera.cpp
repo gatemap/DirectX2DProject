@@ -9,10 +9,10 @@ Camera::Camera()
 	D3DXMatrixIdentity(&m_pVPMatrix->View);
 
 	// 프로젝션 매트릭스 셋팅
-	//D3DXMatrixOrthoOffCenterLH(&m_pVPMatrix->Projection, 0, (float)WINSIZEX, 0, (float)WINSIZEY, -1, 1);
-	//D3DXMatrixTranspose(&m_pVPMatrix->Projection, &m_pVPMatrix->Projection);
-	D3DXMatrixPerspectiveFovLH(&m_pVPMatrix->Projection,0, WINSIZEX / (float)WINSIZEY, -1, 1);
+	D3DXMatrixOrthoOffCenterLH(&m_pVPMatrix->Projection, 0, (float)WINSIZEX, 0, (float)WINSIZEY, -1, 1);
 	D3DXMatrixTranspose(&m_pVPMatrix->Projection, &m_pVPMatrix->Projection);
+	//D3DXMatrixPerspectiveFovLH(&m_pVPMatrix->Projection,0, WINSIZEX / (float)WINSIZEY, -1, 1);
+	//D3DXMatrixTranspose(&m_pVPMatrix->Projection, &m_pVPMatrix->Projection);
 
 	// 뷰x프로젝션 버퍼 생성
 	CreateConstantBuffer(&m_pVPBuffer, sizeof(tagVPMatrix), m_pVPMatrix);

@@ -23,6 +23,16 @@ struct tagVPMatrix
 	D3DXMATRIX Projection;
 };
 
+// 포지션 정보, 칼라 정보를 갖는 버텍스 구조체
+const struct PTVertex
+{
+	D3DXVECTOR3	Position;
+	D3DXVECTOR2	Texture;
+
+	PTVertex() {}
+	PTVertex(D3DXVECTOR3 p, D3DXVECTOR2 t) : Position(p), Texture(t) {}
+};
+
 // === 버퍼 생성 함수들 ===================================================
 // Create Constant Buffer
 inline void CreateConstantBuffer(ID3D11Buffer** ppBuffer, UINT ByteWidth, const void *pSystem)

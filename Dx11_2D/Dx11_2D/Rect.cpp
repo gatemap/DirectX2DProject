@@ -33,18 +33,8 @@ Rect::Rect()
 		};
 
 		// CreateVertexBuffer : m_pVertexBuffer
-		{
-			D3D11_BUFFER_DESC desc = { 0, };
-			desc.Usage = D3D11_USAGE_DEFAULT;
-			desc.ByteWidth = sizeof(PCVertex) * 6;
-			desc.BindFlags = D3D11_BIND_VERTEX_BUFFER;
+		CreateVertexBuffer(&m_pVertexBuffer, sizeof(PCVertex) * 6, &vertices[0]);
 
-			D3D11_SUBRESOURCE_DATA data = { 0, };
-			data.pSysMem = vertices;
-
-			HRESULT hr = g_pDevice->CreateBuffer(&desc, &data, &m_pVertexBuffer);
-			assert(SUCCEEDED(hr));
-		}
 		// CreateBorderBuffer : m_pBorderBuffer
 		{
 			D3D11_BUFFER_DESC desc = { 0, };
@@ -66,16 +56,7 @@ Rect::Rect()
 		D3DXMatrixIdentity(m_pMatWorld);
 
 		// Create WorldBuffer
-		{
-			D3D11_BUFFER_DESC desc = { 0, };
-			desc.Usage = D3D11_USAGE_DEFAULT;
-			desc.ByteWidth = sizeof(D3DXMATRIX);
-			desc.BindFlags = D3D11_BIND_CONSTANT_BUFFER;
-
-			HRESULT hr = g_pDevice->CreateBuffer(&desc, NULL, &m_pWorldBuffer);
-			assert(SUCCEEDED(hr));
-		}
-		g_pDeviceContext->UpdateSubresource(m_pWorldBuffer, 0, NULL, m_pMatWorld, 0, 0);
+		CreateConstantBuffer(&m_pWorldBuffer, sizeof(D3DXMATRIX), m_pMatWorld);
 	}
 
 	// 크기, 회전, 위치 값을 설정

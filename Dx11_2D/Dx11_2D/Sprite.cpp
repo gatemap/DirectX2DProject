@@ -15,15 +15,7 @@ void Sprite::InitSprite(wstring key, float u, float v, float numU, float numV)
 	D3DXMatrixIdentity(m_pMatWorld);
 
 	//Create World Buffer
-	{
-		D3D11_BUFFER_DESC desc = { 0, };
-		desc.Usage = D3D11_USAGE_DEFAULT;
-		desc.ByteWidth = sizeof(D3DXMATRIX);
-		desc.BindFlags = D3D11_BIND_CONSTANT_BUFFER;
-
-		HRESULT hr = g_pDevice->CreateBuffer(&desc, NULL, &m_pWorldBuffer);
-		assert(SUCCEEDED(hr));
-	}
+	CreateConstantBuffer(&m_pWorldBuffer, sizeof(D3DXMATRIX), m_pMatWorld);
 
 	//Vertex information set
 	m_arrVertex[0] = PTVertex(D3DXVECTOR3(-m_vInitSize.x * 0.5f, -m_vInitSize.y * 0.5f, 0.0f), D3DXVECTOR2((u + 0) / numU, (v + 1) / numV), D3DXCOLOR(0, 0, 0, m_vColor.a));
@@ -39,18 +31,7 @@ void Sprite::InitSprite(wstring key, float u, float v, float numU, float numV)
 	};
 
 	//Create Vertex Buffer
-	{
-		D3D11_BUFFER_DESC desc = { 0, };
-		desc.Usage = D3D11_USAGE_DEFAULT;
-		desc.ByteWidth = sizeof(PTVertex) * 6;
-		desc.BindFlags = D3D11_BIND_VERTEX_BUFFER;
-
-		D3D11_SUBRESOURCE_DATA data = { 0, };
-		data.pSysMem = vertices;
-
-		HRESULT hr = g_pDevice->CreateBuffer(&desc, &data, &m_pVertexBuffer);
-		assert(SUCCEEDED(hr));
-	}
+	CreateVertexBuffer(&m_pVertexBuffer, sizeof(PTVertex) * 6, &vertices[0]);
 
 	m_vPos.x = INITX, m_vPos.y = INITY;
 
@@ -161,15 +142,7 @@ void Sprite::InitSpriteCo()
 	D3DXMatrixIdentity(m_pMatWorld);
 
 	// 월드 버퍼 생성
-	{
-		D3D11_BUFFER_DESC desc = { 0, };
-		desc.Usage = D3D11_USAGE_DEFAULT;
-		desc.ByteWidth = sizeof(D3DXMATRIX);
-		desc.BindFlags = D3D11_BIND_CONSTANT_BUFFER;
-
-		HRESULT hr = g_pDevice->CreateBuffer(&desc, NULL, &m_pWorldBuffer);
-		assert(SUCCEEDED(hr));
-	}
+	CreateConstantBuffer(&m_pWorldBuffer, sizeof(D3DXMATRIX), m_pMatWorld);
 
 	// 버텍스 정보 설정
 	m_arrVertex[0] = PTVertex(D3DXVECTOR3(-m_vInitSize.x * 0.5f,-m_vInitSize.y * 0.5f, 0.0f), D3DXVECTOR2(fRt.l, fRt.b), D3DXCOLOR(0, 0, 0, m_vColor.a));	//LB
@@ -185,18 +158,7 @@ void Sprite::InitSpriteCo()
 	};
 
 	// 버텍스 버퍼 생성
-	{
-		D3D11_BUFFER_DESC desc = { 0, };
-		desc.Usage = D3D11_USAGE_DEFAULT;
-		desc.ByteWidth = sizeof(PTVertex) * 6;
-		desc.BindFlags = D3D11_BIND_VERTEX_BUFFER;
-
-		D3D11_SUBRESOURCE_DATA data = { 0, };
-		data.pSysMem = vertices;
-
-		HRESULT hr = g_pDevice->CreateBuffer(&desc, &data, &m_pVertexBuffer);
-		assert(SUCCEEDED(hr));
-	}
+	CreateVertexBuffer(&m_pVertexBuffer, sizeof(PTVertex) * 6, &vertices[0]);
 
 	m_vPos.x = INITX, m_vPos.y = INITY;
 
